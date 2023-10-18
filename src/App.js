@@ -1,6 +1,7 @@
 import ExpenseItem from "./Components/ExpenseItem";
+import NewExpense from "./Components/NewExpense/NewExpense";
 
-const App = ()=> {
+const App = () => {
   const expenses = [
     {
       id: "e1",
@@ -34,6 +35,9 @@ const App = ()=> {
 
   return (
     <div>
+      <div>
+        <NewExpense/>
+      </div>
       <ExpenseItem
         title={expenses[0].title}
         amount={expenses[0].amount}
@@ -60,6 +64,6 @@ const App = ()=> {
       ></ExpenseItem>
     </div>
   );
-}
+};
 
 export default App;
