@@ -1,3 +1,4 @@
+import Chart from "./Components/Chart/Chart";
 import ExpenseItem from "./Components/ExpenseItem";
 import NewExpense from "./Components/NewExpense/NewExpense";
 
@@ -41,6 +42,9 @@ const App = () => {
     <div>
       <div>
         <NewExpense onAddExpense={addExpenseHandler}/>
+      </div>
+      <div>
+        <Chart/>
       </div>
       <ExpenseItem
         title={expenses[0].title}
